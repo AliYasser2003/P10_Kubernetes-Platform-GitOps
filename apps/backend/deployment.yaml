@@ -14,8 +14,6 @@ spec:
     spec:
       containers:
         - name: backend
-          image: hashicorp/http-echo
-          args:
-            - "-text=Backend API Running"
+          image: alyyasser10/project10-backend:v1
           ports:
-            - containerPort: 5678
+            - containerPort: 3000
