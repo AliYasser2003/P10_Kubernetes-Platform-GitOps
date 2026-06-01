@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: frontend-staging
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/AliYasser2003/P10_Kubernetes-Platform-GitOps.git
+    targetRevision: HEAD
+    path: environments/staging/frontend
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: frontend-staging
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
