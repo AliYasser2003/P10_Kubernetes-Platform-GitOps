@@ -28,8 +28,8 @@ The repository acts as the source of truth for application deployments across De
 ---
 
 ## GitOps Workflow
-![Architecture](Project-10_Screenshots/PROJECT10_ARCHITECTURE.drawio.png)<br><br>
-ArgoCD continuously monitors this repository and automatically synchronizes the Kubernetes cluster whenever deployment manifests are updated.
+ArgoCD continuously monitors this repository and automatically synchronizes the Kubernetes cluster whenever deployment manifests are updated.<br><br>
+![Architecture](Project-10_Screenshots/PROJECT10_ARCHITECTURE.drawio.png)
 
 ---
 ## Key Features
